@@ -11,3 +11,7 @@ Pomysły na aplikacje
 
 Motto 
 "Razem możemy więcej!"
+
+hello
+1111
+111
