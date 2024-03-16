@@ -4,6 +4,8 @@ J - Jan
 M - Michał
 O - Olek
 
+MOJpython
+
 
 Pomysły na aplikacje
 - komunikator
