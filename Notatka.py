@@ -39,18 +39,17 @@
 Nasz projekt ma na celu stworzenie kompleksowej aplikacji do wynajmu samochodów, która zapewni użytkownikom łatwy dostęp do szerokiej gamy pojazdów oraz ułatwi proces rezerwacji i zarządzania wypożyczeniami.
 
 ## Zakres:
-- Utworzenie platformy internetowej oraz aplikacji mobilnej dla systemów Android i iOS.
-- Integracja z systemami płatności online, umożliwiając płatności kartą kredytową i innymi popularnymi metodami płatności.
+- Utworzenie platformy internetowej.
 - Implementacja systemu rezerwacji, umożliwiającego użytkownikom wybór daty, czasu i miejsca odbioru oraz zwrotu pojazdu.
 - Stworzenie panelu administracyjnego dla pracowników firmy do zarządzania flotą samochodów, rezerwacjami oraz klientami.
 - Zapewnienie możliwości oceniania i recenzowania zarówno pojazdów, jak i doświadczeń użytkowników.
+- Zaimplementowanie chatbota który pomoże w wyborze auta.
 
 ## Funkcjonalności:
 - Rejestracja i logowanie użytkowników.
 - Przeglądanie dostępnych pojazdów z filtrowaniem według preferencji.
 - Wybór daty, czasu i miejsca odbioru oraz zwrotu pojazdu.
-- Realizacja płatności online.
-- Generowanie potwierdzeń rezerwacji i faktur.
+- Generowanie potwierdzeń rezerwacji.
 - Historia rezerwacji i możliwość anulowania rezerwacji.
 - Ocena i recenzowanie pojazdów i doświadczeń użytkowników.
 - Zarządzanie profilem użytkownika.
@@ -82,7 +81,35 @@ cars = [
 
 @app.route('/')
 def index():
-    return render_template('index.html', cars=cars)
+    # html_content = """
+    # <!DOCTYPE html>
+    # <html lang="en">
+    # <head>
+    #     <meta charset="UTF-8">
+    #     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    #     <title>Wypożyczalnia samochodów</title>
+    # </head>
+    # <body>
+    #     <header>
+    #         <h1>Wypożyczalnia samochodów</h1>
+    #     </header>
+        
+    #     <div class="car-library">
+    #         <h2>Dostępne samochody:</h2>
+    #         <ul>
+    #             {% for car in cars %}
+    #             <li>
+    #                 <h3>{{ car.brand }} {{ car.model }}</h3>
+    #                 <p>Rok produkcji: {{ car.year }}</p>
+    #                 <p>Cena za dzień: {{ car.price }}$</p>
+    #             </li>
+    #             {% endfor %}
+    #         </ul>
+    #     </div>
+    # </body>
+    # </html>
+    # """
+    return render_template("index.html", cars=cars)
 
 if __name__ == '__main__':
     app.run(debug=True)

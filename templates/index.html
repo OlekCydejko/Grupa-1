@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wypożyczalnia samochodów</title>
+</head>
+<body>
+    <header>
+        <h1>Wypożyczalnia samochodów</h1>
+    </header>
+        
+    <div class="car-library">
+        <h2>Dostępne samochody:</h2>
+        <ul>
+                {% for car in cars %}
+            <li>
+                <h3>{{ car.brand }} {{ car.model }}</h3>
+                <p>Rok produkcji: {{ car.year }}</p>
+                <p>Cena za dzień: {{ car.price }}$</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
