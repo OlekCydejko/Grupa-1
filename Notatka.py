@@ -33,7 +33,7 @@
 
 
 
-# Projekt Aplikacji Wynajmu Samochodów
+# Projekt Aplikacji Webowej do Wynajmu Samochodów
 
 """## Cel:
 Nasz projekt ma na celu stworzenie kompleksowej aplikacji do wynajmu samochodów, która zapewni użytkownikom łatwy dostęp do szerokiej gamy pojazdów oraz ułatwi proces rezerwacji i zarządzania wypożyczeniami.
