@@ -9,6 +9,7 @@ MOJpython
 
 Pomysły na aplikacje
 - komunikator
+- wypożyczalnia aut 
 - system lojalnoiściowy
 
 Motto 
